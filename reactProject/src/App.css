@@ -1,0 +1,96 @@
+.app-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+.app-header {
+  margin-bottom: 3rem;
+}
+
+.app-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  background-image: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn-add {
+  background-image: var(--accent-gradient);
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.btn-add:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex; justify-content: center; align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background-color: var(--card-background);
+  color: var(--text-color);
+  padding: 30px;
+  border-radius: 12px;
+  width: 450px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.modal-content h2 { margin: 0 0 20px 0; }
+.modal-content form { display: flex; flex-direction: column; gap: 15px; }
+
+.modal-content input, .modal-content textarea {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: #2a2a2a;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+.modal-content input:focus, .modal-content textarea:focus {
+  outline: none;
+  border-color: var(--accent-color-solid);
+}
+
+.modal-buttons { display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; }
+
+.modal-buttons button { padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: 600; border: none; }
+.modal-buttons button[type="submit"] { background-image: var(--accent-gradient); color: white; }
+.modal-buttons button[type="button"] { background-color: #333; color: var(--text-color); }
+
+.error-message {
+  background-color: rgba(239, 83, 80, 0.1);
+  color: var(--error-color);
+  padding: 15px;
+  border: 1px solid var(--error-color);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.app-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-color-muted);
+}
